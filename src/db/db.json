@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "test@gmail.com",
+      "mobile": "1234567890",
+      "password": "123456",
+      "dob": "2023-11-24",
+      "id": 1
+    },
+    {
+      "name": "Tester 123",
+      "mobile": "123456",
+      "email": "tester123@yahoo.com",
+      "password": "12345678",
+      "dob": "2023-11-24",
+      "id": 2
+    },
+    {
+      "name": "Sirshendu",
+      "mobile": "123",
+      "email": "sirshendu@gmail.com",
+      "password": "12345678",
+      "dob": "2023-11-24",
+      "id": 3
+    },
+    {
+      "name": "Anirban",
+      "mobile": "675537686542",
+      "email": "anirban@gmail.com",
+      "password": "123456",
+      "dob": "2023-11-24",
+      "id": 4
+    },
+    {
+      "name": "testing lorem",
+      "mobile": "9876543210",
+      "email": "lorem@gmail.com",
+      "password": "123456",
+      "dob": "2023-11-24",
+      "id": 5
+    },
+    {
+      "name": "wwww",
+      "mobile": "22",
+      "email": "we@ss.lo",
+      "password": "1234567",
+      "dob": "2023-11-24",
+      "id": 6
+    },
+    {
+      "name": "xyz",
+      "mobile": "123",
+      "email": "2w@ew.com",
+      "password": "123456",
+      "dob": "2023-11-24",
+      "id": 7
+    },
+    {
+      "name": "ss",
+      "mobile": "ss",
+      "email": "ss@asd.ghjgh",
+      "password": "3324234324324",
+      "dob": "2023-10-03",
+      "id": 8
+    },
+    {
+      "name": "abc",
+      "mobile": "987",
+      "email": "abc@gmail.com",
+      "password": "321456",
+      "dob": "2023-10-12",
+      "id": 9
+    },
+    {
+      "name": "Alpha Tester",
+      "mobile": "789",
+      "email": "alpha@gmail.com",
+      "password": "654321",
+      "dob": "2023-10-18",
+      "id": 10
+    }
+  ],
+  "qualification": [
+    {
+      "degree": "aa",
+      "year": "10"
+    },
+    {
+      "degree": "bb",
+      "year": "20"
+    },
+    {
+      "degree": "cc",
+      "year": "30"
+    }
+  ],
+  "product": [
+    {
+      "category": "Dress",
+      "subcategory": "Kids",
+      "business": "Company Name",
+      "city": "Mumbai",
+      "name": "Lorem Ipsum",
+      "price": "236",
+      "id": 1
+    },
+    {
+      "category": "Mobile",
+      "subcategory": "Man",
+      "business": "Other Company",
+      "city": "Delhi",
+      "name": "Anrodoid",
+      "price": "15004",
+      "id": 2
+    },
+    {
+      "category": "Watch",
+      "subcategory": "Kids",
+      "business": "Company Name",
+      "city": "Kolkata",
+      "name": "Digital Plastic Band",
+      "price": "552",
+      "id": 3
+    },
+    {
+      "category": "Mobile",
+      "subcategory": "Women",
+      "business": "Company Name",
+      "city": "Delhi",
+      "name": "lorem",
+      "price": "123",
+      "id": 4
+    },
+    {
+      "category": "Dress",
+      "subcategory": "Man",
+      "business": "Company Name",
+      "city": "Kolkata",
+      "name": "Cap",
+      "price": "100",
+      "id": 5
+    },
+    {
+      "category": "Dress",
+      "subcategory": "Kids",
+      "business": "Other Company",
+      "city": "Delhi",
+      "name": "testing",
+      "price": "654",
+      "id": 6
+    },
+    {
+      "category": "Dress",
+      "subcategory": "Kids",
+      "business": "Other Company",
+      "city": "Mumbai",
+      "name": "Hello",
+      "price": "3258",
+      "id": 7
+    },
+    {
+      "category": "Watch",
+      "subcategory": "Kids",
+      "business": "Other Company",
+      "city": "Delhi",
+      "name": "hjk",
+      "price": "44",
+      "id": 8
+    },
+    {
+      "category": "Mobile",
+      "subcategory": "Kids",
+      "business": "Company Name",
+      "city": "Mumbai",
+      "name": "hrh dfgdf",
+      "price": "5366",
+      "id": 9
+    },
+    {
+      "category": "Dress",
+      "subcategory": "Women",
+      "business": "Other Company",
+      "city": "Kolkata",
+      "name": "qweqw",
+      "price": "1231",
+      "id": 10
+    },
+    {
+      "category": "Mobile",
+      "subcategory": "Women",
+      "business": "Other Company",
+      "city": "Delhi",
+      "name": "qweqw",
+      "price": "44",
+      "id": 11
+    }
+  ]
+}
