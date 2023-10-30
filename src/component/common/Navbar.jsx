@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link class="nav-link" to="/qualification">
               Add Qualification
             </Link>
-            <Link class="nav-link" to="/primary">
+            <Link class="nav-link" to="/newproduct">
               New Product
             </Link>
             <Link class="nav-link" to="/products">
@@ -52,6 +52,9 @@ const Navbar = () => {
             </Link>
             <Link class="nav-link" to="/calendar">
               Calendar
+            </Link>
+            <Link class="nav-link" to="/pdf">
+              PDF
             </Link>
             
             {localStorage.getItem("token") !== null ? (

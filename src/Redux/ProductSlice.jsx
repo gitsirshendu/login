@@ -3,6 +3,7 @@ import AxiosInstance from "../Axios/AxiosInstance";
 
 const initialState = {
   products: {},
+  cart: [],
   status: "idle",
   totalRecords: 0,
 };
@@ -24,7 +25,7 @@ export const ProductSlice = createSlice({
   extraReducers: {
     [FetchProducts.pending]: (state) => {
       state.status = "loading";
-    //   state.products = null;
+      //   state.products = null;
     },
     [FetchProducts.fulfilled]: (state, { payload }) => {
       state.status = "success";
@@ -33,7 +34,9 @@ export const ProductSlice = createSlice({
     },
     [FetchProducts.rejected]: (state, action) => {
       state.status = "failed";
-    //   state.products = null;
+      //   state.products = null;
     },
   },
 });
+
+export const { AddToCart } = ProductSlice.actions;

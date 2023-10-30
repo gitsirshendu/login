@@ -2,9 +2,20 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchProducts } from "../Redux/ProductSlice";
 import ReactPaginate from "react-paginate";
+// import { add } from "../Redux/cartSlice";
 // import "./pagination.css";
 
 function Items({ currentItems }) {
+  const initialCart={
+    itemID:'',
+    qty:0
+  }
+  const dispatch=useDispatch()
+
+  const handleClick=(item)=>{
+    console.log(item);
+    // dispatch(addcart(item))
+  }
   return (
     <>
       {currentItems &&
@@ -25,9 +36,9 @@ function Items({ currentItems }) {
                     __html: item?.description.slice(0, 50),
                   }}
                 ></p>
-                {/* <a href="#" class="btn btn-primary">
-                        Go somewhere
-                      </a> */}
+                <button id={item._id} onClick={()=>handleClick(item)} class="btn btn-primary">
+                  Go somewhere
+                </button>
               </div>
             </div>
           </div>
@@ -37,7 +48,7 @@ function Items({ currentItems }) {
 }
 
 const Dashboard = () => {
-  const { products, status, totalRecords } = useSelector(
+  const { products, cart, status, totalRecords } = useSelector(
     (state) => state.Product
   );
   const dispatch = useDispatch();
@@ -68,7 +79,9 @@ const Dashboard = () => {
     setItemOffset(newOffset);
   };
 
-  console.log(currentItems);
+  
+
+  console.log(status);
 
   useEffect(() => {
     dispatch(FetchProducts());

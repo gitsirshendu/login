@@ -16,12 +16,13 @@ import Users from "../../page/Users";
 import Qualification from "../../page/Qualification";
 import Addmore from "../../page/Addmore";
 import Qualifications from "../../page/Qualifications";
-import PrimaryForm from "../../page/PrimaryForm";
 import Products from "../../page/Products";
 import ProductListing from "../../page/ProductListing";
 import ProductMDBListing from "../../page/ProductMDBListing";
 import Upload from "../../page/Upload";
 import TheCalendar from "./TheCalendar";
+import ProductForm from "../../page/PrimaryForm";
+import PdfPrint from "../../page/PdfPrint";
 
 
 const Routing = () => {
@@ -48,8 +49,8 @@ const Routing = () => {
       element: <Register />,
     },
     {
-      path: "primary",
-      element: <PrimaryForm />,
+      path: "newproduct",
+      element: <ProductForm />,
     },
     {
       path: "reactlisting",
@@ -67,6 +68,10 @@ const Routing = () => {
       path: "calendar",
       element: <TheCalendar />,
     },
+    // {
+    //   path: "pdf",
+    //   element: <PdfPrint />,
+    // },
   ];
 
   const PrivateRoutes = [

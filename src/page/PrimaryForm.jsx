@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { addProduct } from "../service/Api";
 import swal from "sweetalert";
 
-const PrimaryForm = () => {
+const ProductForm = () => {
   const initialValues = {
     category: "",
     subcategory: "",
@@ -13,14 +13,42 @@ const PrimaryForm = () => {
     price: "",
   };
 
+  const subcategoryInitialValues = {
+    title: "Choose...",
+    value: "",
+  };
+
   const navigate = useNavigate();
   const [product, setProduct] = useState(initialValues);
   const [dataError, setDataError] = useState({});
+  const [subcategory, setSubcategory] = useState([subcategoryInitialValues]);
 
   let name, value;
   const postData = (e) => {
     name = e.target.name;
     value = e.target.value;
+
+    if (name === "category") {
+      if (value === "Dress") {
+        setSubcategory([
+          { title: "Men", value: "Men" },
+          { title: "Women", value: "Women" },
+          { title: "Kids", value: "Kids" },
+        ]);
+      } else if (value === "Mobile") {
+        setSubcategory([
+          { title: "Android", value: "Android" },
+          { title: "iPhone", value: "iPhone" },
+          { title: "Windows", value: "Windows" },
+        ]);
+      } else if (value === "Watch") {
+        setSubcategory([
+          { title: "Digital", value: "Digital" },
+          { title: "Analogue", value: "Analogue" },
+          { title: "Android", value: "Android" },
+        ]);
+      }
+    }
 
     setProduct({ ...product, [name]: value });
 
@@ -50,8 +78,7 @@ const PrimaryForm = () => {
 
     if (value === null || value === "" || value === undefined) {
       setDataError({ ...dataError, [name]: errorMsg });
-    }
-    else {
+    } else {
       setDataError({ ...dataError, [name]: "" });
     }
   };
@@ -143,9 +170,13 @@ const PrimaryForm = () => {
                     <option selected disabled value="">
                       Select Sub category
                     </option>
-                    <option value="Man">Man</option>
-                    <option value="Women">Women</option>
-                    <option value="Kids">Kids</option>
+                    {subcategory.map((item, key) => {
+                      return (
+                        <option key={key} value={item.value}>
+                          {item.title}
+                        </option>
+                      );
+                    })}
                   </select>
                   <div class="validate text-danger">
                     {dataError.subcategory}
@@ -233,4 +264,4 @@ const PrimaryForm = () => {
   );
 };
 
-export default PrimaryForm;
+export default ProductForm;
