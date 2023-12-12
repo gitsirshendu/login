@@ -23,6 +23,9 @@ import Upload from "../../page/Upload";
 import TheCalendar from "./TheCalendar";
 import ProductForm from "../../page/PrimaryForm";
 import PdfPrint from "../../page/PdfPrint";
+import ViewFile from "../../page/ViewFile";
+import Test from "../../page/Test";
+import Rnd from "../../page/Rnd";
 
 
 const Routing = () => {
@@ -67,6 +70,18 @@ const Routing = () => {
     {
       path: "calendar",
       element: <TheCalendar />,
+    },
+    {
+      path: "viewfile",
+      element: <ViewFile />,
+    },
+    {
+      path: "test",
+      element: <Test />,
+    },
+    {
+      path: "rnd",
+      element: <Rnd />,
     },
     // {
     //   path: "pdf",

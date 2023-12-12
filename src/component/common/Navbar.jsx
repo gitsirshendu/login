@@ -56,6 +56,9 @@ const Navbar = () => {
             <Link class="nav-link" to="/pdf">
               PDF
             </Link>
+            <Link class="nav-link" to="/viewfile">
+              File Viewer
+            </Link>
             
             {localStorage.getItem("token") !== null ? (
               <>
